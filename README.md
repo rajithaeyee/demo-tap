@@ -40,7 +40,7 @@ Outputs:
 4. Click **Load unpacked** and select the `build/` folder.
 5. Pin the **Demo Tap** action and click it to open settings.
 
-## Publish (production)
+## Publish your own to prod
 
 1. Run `make` to produce `demo-tap.zip`.
 2. Upload `demo-tap.zip` at the [Chrome Web Store Developer Dashboard](https://chrome.google.com/webstore/devconsole).
