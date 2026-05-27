@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Demo Tap</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="title">
+        <span class="dot" id="brandDot"></span>
+        <h1>Demo Tap</h1>
+      </div>
+      <label class="switch" title="Enable on this browser">
+        <input type="checkbox" id="enabled" />
+        <span class="slider"></span>
+      </label>
+    </header>
+
+    <section class="preview" id="preview" aria-label="Live preview — click to test">
+      <span class="hint">Click anywhere in this area to preview</span>
+    </section>
+
+    <section class="group">
+      <div class="row">
+        <label class="label">Color</label>
+        <div class="color-row">
+          <input type="color" id="color" />
+          <code id="colorHex" class="hex"></code>
+        </div>
+      </div>
+      <div class="swatches" id="swatches"></div>
+    </section>
+
+    <section class="group">
+      <div class="row">
+        <label class="label" for="style">Style</label>
+        <div class="segmented" role="tablist" id="styleGroup">
+          <button type="button" data-value="ring" role="tab">Ring</button>
+          <button type="button" data-value="solid" role="tab">Solid</button>
+          <button type="button" data-value="pulse" role="tab">Pulse</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <label class="label" for="size">Size <span class="value" id="sizeValue"></span></label>
+        <input type="range" id="size" min="8" max="48" step="1" />
+      </div>
+
+      <div class="row">
+        <label class="label" for="duration">Duration <span class="value" id="durationValue"></span></label>
+        <input type="range" id="duration" min="200" max="1500" step="50" />
+      </div>
+
+      <div class="row inline">
+        <label class="label" for="showCursor">Cursor halo</label>
+        <label class="switch small">
+          <input type="checkbox" id="showCursor" />
+          <span class="slider"></span>
+        </label>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <button class="reset" id="reset" type="button">Reset to defaults</button>
+    </footer>
+
+    <script src="shared.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
