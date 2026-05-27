@@ -3,7 +3,7 @@
 ![Demo Tap](assets/images/demo.gif)
 
 
-A Chrome extension that draws an elegant ripple wherever you click — built for screen recordings, walkthroughs, and live demos.
+A Chrome extension that draws a ripple wherever you click. Built for screen recordings, walkthroughs, and live demos.
 
 ## Features
 
